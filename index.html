@@ -1,79 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-wrapper">
-        <a href="./" class="logo">
-          <img src="img/logo.svg" alt="Логотип " class="logo__image" />
-        </a>
-        <!-- /.logo -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pro LTV</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <a href="./" class="logo">
+                    <img
+                        src="img/logo.svg"
+                        alt="Логотип "
+                        class="logo__image"
+                    />
+                </a>
+                <!-- /.logo -->
 
-        <nav class="header-navbar">
-          <ul class="header-menu">
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">О нас</a>
-              <!-- /.header-menu__link -->
-            </li>
-            <!-- /.header-menu__item -->
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Этапы работы</a>
-              <!-- /.header-menu__link -->
-            </li>
-            <!-- /.header-menu__item -->
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Команда</a>
-              <!-- /.header-menu__link -->
-            </li>
-            <!-- /.header-menu__item -->
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">FAQ</a>
-              <!-- /.header-menu__link -->
-            </li>
-            <!-- /.header-menu__item -->
-          </ul>
-          <!-- /.header-menu -->
-        </nav>
-        <!-- /.navbar -->
+                <nav class="header-navbar">
+                    <ul class="header-menu">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">О нас</a>
+                            <!-- /.header-menu__link -->
+                        </li>
+                        <!-- /.header-menu__item -->
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"
+                                >Этапы работы</a
+                            >
+                            <!-- /.header-menu__link -->
+                        </li>
+                        <!-- /.header-menu__item -->
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Команда</a>
+                            <!-- /.header-menu__link -->
+                        </li>
+                        <!-- /.header-menu__item -->
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">FAQ</a>
+                            <!-- /.header-menu__link -->
+                        </li>
+                        <!-- /.header-menu__item -->
+                    </ul>
+                    <!-- /.header-menu -->
+                </nav>
+                <!-- /.navbar -->
 
-        <div class="social">
-          <a
-            href="https://api.whatsapp.com/send/?phone=79851843154"
-            class="social-block"
-          >
-            <span class="social-block__text">WhatsApp</span>
-            <img
-              src="img/whatsApp.svg"
-              alt="WhatsApp"
-              class="social-block__image"
-            />
-          </a>
-          <!-- /.social-block -->
-          <a href="https://t.me/NikolayDimitriev" class="social-block">
-            <span class="social-block__text">Telegram</span>
-            <img
-              src="img/telegram.svg"
-              alt="Telegram"
-              class="social-block__image"
-            />
-          </a>
-          <!-- /.social-block -->
-        </div>
-        <!-- /.social -->
-      </div>
-      <!-- /.header-wrapper -->
-    </header>
-  </body>
+                <div class="social">
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=79150774733"
+                        class="social-block"
+                    >
+                        <span class="social-block__text">WhatsApp</span>
+                        <img
+                            src="img/whatsApp.svg"
+                            alt="WhatsApp"
+                            class="social-block__image"
+                        />
+                    </a>
+                    <!-- /.social-block -->
+                    <a href="https://t.me/Pro_LTV" class="social-block">
+                        <span class="social-block__text">Telegram</span>
+                        <img
+                            src="img/telegram.svg"
+                            alt="Telegram"
+                            class="social-block__image"
+                        />
+                    </a>
+                    <!-- /.social-block -->
+                </div>
+                <!-- /.social -->
+            </div>
+            <!-- /.header-wrapper -->
+        </header>
+
+        <section class="main">
+            <div class="main-wrapper">
+                <h2 class="main-title main__title">
+                    Таргетированная реклама
+                    <span class="main-title__strong">
+                        заточенная на&nbsp;результат
+                    </span>
+                </h2>
+
+                <div class="main-form">
+                    <h2 class="main-form__title">Отправить заявку</h2>
+                    <form
+                        action="#"
+                        method="POST"
+                        class="subscribe main__subscribe"
+                    >
+                        <input
+                            type="text"
+                            class="subscribe__input"
+                            placeholder="Имя"
+                            name="email"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="subscribe__input"
+                            placeholder="Телефон"
+                            name="email"
+                            required
+                        />
+                        <button class="subscribe__button">Отправить</button>
+                    </form>
+                </div>
+                <!-- /.main-form -->
+            </div>
+            <!-- /.main-wrapper -->
+        </section>
+
+        <section class="about">
+            <div class="container"></div>
+            <!-- /.container -->
+        </section>
+    </body>
 </html>
