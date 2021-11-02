@@ -1,5 +1,6 @@
 .header
    padding: 20px 0
+   z-index: 3
    &-wrapper
       max-width: 1760px
       margin: auto
@@ -18,12 +19,16 @@
       flex-grow: 1
       &__item
          list-style: none
+         z-index: 100
       &__link
          padding: 14px 25px
          border-radius: 10px
          font-weight: 500
          font-size: 20px
          line-height: 24px
+         &:hover
+            background-color: #DD3934
+            color: #fff
 .logo
    margin-right: 70px
 .social
