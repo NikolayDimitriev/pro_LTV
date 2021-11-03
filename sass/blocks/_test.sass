@@ -1,0 +1,113 @@
+.test
+   background-image: url(../img/slider-bg.png)
+   padding-bottom: 85px
+   &-slider
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      &__slide
+         display: flex
+         flex-direction: column
+         justify-content: flex-start
+         align-items: flex-start
+         width: 100%
+   &-top
+      display: flex
+      justify-content: flex-start
+      align-items: flex-start
+      position: relative
+      width: 95%
+      background: linear-gradient(233.54deg, rgba(95, 76, 142, 0.2) 28.75%, rgba(228, 42, 42, 0.2) 52.12%, rgba(26, 8, 51, 0.2) 88.11%), radial-gradient(25% 30.33% at 25% 30.33%, rgba(160, 32, 103, 0.3) 0%, rgba(26, 9, 51, 0.3) 100%), linear-gradient(0deg, #1A0933, #1A0933), #2D69A5
+      padding: 15px 30px 0 40px
+      &::before
+         content: ''
+         position: absolute
+         top: 0
+         right: -6.3%
+         width: 360px
+         height: 246px
+         background-image: url(../img/letgotest.png)
+         background-repeat: no-repeat
+         z-index: 1
+      &__img
+         margin-right: 50px
+      &__title
+         font-weight: bold
+         font-size: 30px
+         line-height: 120%
+         text-transform: uppercase
+         color: #FFFFFF
+         margin: 0
+         margin-bottom: 10px
+      &__strong
+         color: #FFDE01
+      &__subtitle
+         font-size: 20px
+         line-height: 140%
+         color: #fff
+   &-bottom
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      width: 100%
+      background: #FFFFFF
+      border: 2px solid #000000
+      box-shadow: 10px 10px 0 #C679FF
+      padding: 30px 100px 25px 50px
+      &__quiz
+         display: flex
+         flex-direction: column
+         margin-right: 70px
+      &__title
+         font-weight: 600
+         font-size: 30px
+         line-height: 120%
+         color: #000000
+         margin: 0
+         margin-bottom: 30px
+      &__respons
+         display: flex
+         justify-content: space-between
+         flex-wrap: wrap
+         max-width: 620px
+      &__btn
+         width: 300px
+         height: 100px
+         background-color: #FFFFFF
+         border: none
+         border: 1px solid rgba(0, 0, 0, 0.5)
+         margin-bottom: 20px
+         &:hover
+            background-color: #FFDE01
+      &__buttons
+         margin-top: 5px
+         max-width: 620px
+         display: flex
+         justify-content: space-between
+         align-items: center
+      &__prev,
+      &__next
+         text-transform: uppercase
+         border: none
+         background-color: #fff
+         font-weight: bold
+         font-size: 14px
+         line-height: 160%
+         letter-spacing: 0.1em
+         color: #000000
+         opacity: 0.3
+         &:hover
+            opacity: 0.7  
+      &__left
+         display: inline-block
+         margin-left: 15px
+      &__right
+         display: inline-block
+         margin-right: 15px
+      &__arrow
+         &--right
+            transform: matrix(-1, 0, 0, 1, 0, 0)
+
+            
+
