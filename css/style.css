@@ -1271,7 +1271,7 @@ a:hover, button:hover {
 }
 
 .team {
-  background-image: url(../img/team-bg.png);
+  background-image: url(../img/team/team-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 90px 0;
@@ -1364,5 +1364,192 @@ a:hover, button:hover {
   font-size: 14px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.faq {
+  background-image: url(../img/faq-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+  color: #000000;
+}
+
+.faq__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.faq-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.faq-wrapper__preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px 0;
+}
+
+.faq-wrapper__preview:hover {
+  cursor: pointer;
+  color: #fff;
+  padding: 35px 40px;
+  background: linear-gradient(233.54deg, rgba(95, 76, 142, 0.2) 28.75%, rgba(228, 42, 42, 0.2) 52.12%, rgba(26, 8, 51, 0.2) 88.11%), radial-gradient(25% 30.33% at 25% 30.33%, rgba(160, 32, 103, 0.3) 0%, rgba(26, 9, 51, 0.3) 100%), #1A0933;
+}
+
+.faq-wrapper__question {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 150%;
+}
+
+.faq-wrapper__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #072D42;
+}
+
+.faq-wrapper__discription {
+  display: none;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 170%;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.faq-wrapper__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.footer {
+  padding: 10px 0 0 0;
+  color: #fff;
+  background: linear-gradient(234.77deg, rgba(95, 76, 142, 0.2) 29.31%, rgba(228, 42, 42, 0.2) 53.12%, rgba(26, 8, 51, 0.2) 89.81%), radial-gradient(25% 31.75% at 25% 31.75%, rgba(160, 32, 103, 0.3) 0%, rgba(26, 9, 51, 0.3) 100%), #1A0933;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-block:nth-child(1) {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-block:nth-child(2) {
+  font-size: 13px;
+  line-height: 170%;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.footer-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-block__author {
+  margin-right: 50px;
+  font-size: 14px;
+  line-height: 170%;
+}
+
+.footer-block__info {
+  font-size: 14px;
+  line-height: 170%;
+}
+
+.footer-block__rights {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-block__deal {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-block__confidentiality {
+  margin-right: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 50px;
+}
+
+.footer-social__text {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-social__image {
+  width: 36px;
+  height: 36px;
 }
 /*# sourceMappingURL=style.css.map */
