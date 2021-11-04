@@ -1,17 +1,15 @@
 .test
    background-image: url(../img/slider-bg.png)
    padding-bottom: 85px
+   &-container
+      max-width: 1140px
+      margin: auto
    &-slider
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      align-items: center
       &__slide
          display: flex
          flex-direction: column
          justify-content: flex-start
          align-items: flex-start
-         width: 100%
    &-top
       display: flex
       justify-content: flex-start
@@ -24,7 +22,7 @@
          content: ''
          position: absolute
          top: 0
-         right: -6.3%
+         right: -5.3%
          width: 360px
          height: 246px
          background-image: url(../img/letgotest.png)
@@ -50,11 +48,11 @@
       display: flex
       justify-content: flex-start
       align-items: center
-      width: 100%
+      width: 99.2%
       background: #FFFFFF
       border: 2px solid #000000
       box-shadow: 10px 10px 0 #C679FF
-      padding: 30px 100px 25px 50px
+      padding: 30px 100px 41px 50px
       &__quiz
          display: flex
          flex-direction: column
@@ -66,6 +64,9 @@
          color: #000000
          margin: 0
          margin-bottom: 30px
+      &__subtitle
+         display: inline-block
+         width: 620px
       &__respons
          display: flex
          justify-content: space-between
@@ -79,26 +80,51 @@
          border: 1px solid rgba(0, 0, 0, 0.5)
          margin-bottom: 20px
          &:hover
-            background-color: #FFDE01
-      &__buttons
-         margin-top: 5px
-         max-width: 620px
+            background-color: #FFDE01 
+      &__form
          display: flex
          justify-content: space-between
          align-items: center
-      &__prev,
-      &__next
-         text-transform: uppercase
+         flex-wrap: wrap
+      &__input
          border: none
-         background-color: #fff
-         font-weight: bold
-         font-size: 14px
-         line-height: 160%
-         letter-spacing: 0.1em
+         padding: 10px 2px
+         border-bottom: 2px solid rgba(0, 0, 0, 0.5)
+         font-size: 20px
+         line-height: 120%
          color: #000000
-         opacity: 0.3
-         &:hover
-            opacity: 0.7  
+         margin-right: 20px
+         margin-bottom: 40px
+         width: 47%
+      &__submit
+         color: #fff
+         width: 47%
+         height: 60px
+   &-swiper
+      position: relative
+      width: 105% !important
+   &-buttons
+      position: absolute
+      z-index: 10
+      bottom: 5%
+      left: 4%
+      width: 55%
+      max-width: 620px
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &-button
+      text-transform: uppercase
+      border: none
+      background-color: #fff
+      font-weight: bold
+      font-size: 14px
+      line-height: 160%
+      letter-spacing: 0.1em
+      color: #000000
+      opacity: 0.3
+      &:hover
+         opacity: 0.7  
       &__left
          display: inline-block
          margin-left: 15px
@@ -108,6 +134,10 @@
       &__arrow
          &--right
             transform: matrix(-1, 0, 0, 1, 0, 0)
+.swiper 
+  width: 99%
+  height: 540px
+
 
             
 

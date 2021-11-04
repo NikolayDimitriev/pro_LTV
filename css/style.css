@@ -903,20 +903,9 @@ a:hover, button:hover {
   padding-bottom: 85px;
 }
 
-.test-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.test-container {
+  max-width: 1140px;
+  margin: auto;
 }
 
 .test-slider__slide {
@@ -933,7 +922,6 @@ a:hover, button:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 100%;
 }
 
 .test-top {
@@ -956,7 +944,7 @@ a:hover, button:hover {
   content: '';
   position: absolute;
   top: 0;
-  right: -6.3%;
+  right: -5.3%;
   width: 360px;
   height: 246px;
   background-image: url(../img/letgotest.png);
@@ -998,12 +986,12 @@ a:hover, button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 99.2%;
   background: #FFFFFF;
   border: 2px solid #000000;
   -webkit-box-shadow: 10px 10px 0 #C679FF;
           box-shadow: 10px 10px 0 #C679FF;
-  padding: 30px 100px 25px 50px;
+  padding: 30px 100px 41px 50px;
 }
 
 .test-bottom__quiz {
@@ -1024,6 +1012,11 @@ a:hover, button:hover {
   color: #000000;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.test-bottom__subtitle {
+  display: inline-block;
+  width: 620px;
 }
 
 .test-bottom__respons {
@@ -1051,8 +1044,49 @@ a:hover, button:hover {
   background-color: #FFDE01;
 }
 
-.test-bottom__buttons {
-  margin-top: 5px;
+.test-bottom__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.test-bottom__input {
+  border: none;
+  padding: 10px 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  line-height: 120%;
+  color: #000000;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  width: 47%;
+}
+
+.test-bottom__submit {
+  color: #fff;
+  width: 47%;
+  height: 60px;
+}
+
+.test-swiper {
+  position: relative;
+  width: 105% !important;
+}
+
+.test-buttons {
+  position: absolute;
+  z-index: 10;
+  bottom: 5%;
+  left: 4%;
+  width: 55%;
   max-width: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1065,7 +1099,7 @@ a:hover, button:hover {
           align-items: center;
 }
 
-.test-bottom__prev, .test-bottom__next {
+.test-button {
   text-transform: uppercase;
   border: none;
   background-color: #fff;
@@ -1077,22 +1111,27 @@ a:hover, button:hover {
   opacity: 0.3;
 }
 
-.test-bottom__prev:hover, .test-bottom__next:hover {
+.test-button:hover {
   opacity: 0.7;
 }
 
-.test-bottom__left {
+.test-button__left {
   display: inline-block;
   margin-left: 15px;
 }
 
-.test-bottom__right {
+.test-button__right {
   display: inline-block;
   margin-right: 15px;
 }
 
-.test-bottom__arrow--right {
+.test-button__arrow--right {
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
           transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.swiper {
+  width: 99%;
+  height: 540px;
 }
 /*# sourceMappingURL=style.css.map */
