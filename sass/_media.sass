@@ -53,11 +53,25 @@
             &__image
                 width: 45px
                 height: 45px
+    .team
+        &__title
+            font-size: 50px
+        &-wrapper
+            width: 70%
+            margin: auto
+            &__item
+                margin-bottom: 20px
 @media (max-width: 992px)
     .container
         max-width: 760px
     .logo
         margin-right: 20px
+    .team
+        &-wrapper
+            width: 80%
+            &__item
+                &:nth-child(2) 
+                    margin-right: 0
 @media (max-width: 783px)
     .social 
         display: none
@@ -90,11 +104,27 @@
                 height: 36px
             &__text
                 display: inline-block
+    .team
+        &-wrapper
+            width: 100%
 @media (max-width: 768px)
     .container
         max-width: 576px
         width: 93%
+@media (max-width: 605px)
+    .team
+        &-wrapper
+            width: 95%
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__item
+                margin: 0
+                margin-bottom: 20px
 @media (max-width: 480px)
+    .team
+        &__title
+            font-size: 35px
     .logo
         width: 148px
     
