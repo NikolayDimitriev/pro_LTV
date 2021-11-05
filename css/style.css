@@ -368,13 +368,17 @@ a:hover, button:hover {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   padding: 20px 0;
   z-index: 3;
 }
 
 .header-wrapper {
-  max-width: 1760px;
+  max-width: 95%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,11 +391,16 @@ a:hover, button:hover {
           align-items: center;
 }
 
-.header-navbar {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  margin-right: 444px;
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-menu {
@@ -431,6 +440,7 @@ a:hover, button:hover {
 
 .logo {
   margin-right: 70px;
+  width: 249px;
 }
 
 .social {
@@ -463,6 +473,10 @@ a:hover, button:hover {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+}
+
+.menu {
+  display: none;
 }
 
 .main {
@@ -1551,5 +1565,90 @@ a:hover, button:hover {
 .footer-social__image {
   width: 36px;
   height: 36px;
+}
+
+@media (max-width: 1350px) {
+  .social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    min-width: 0;
+  }
+  .social-block__text {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .logo {
+    width: 188px;
+  }
+  .header-menu__link {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .social-block__image {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 783px) {
+  .social {
+    display: none;
+  }
+  .header-navbar {
+    display: none;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+  }
+  .menu__line {
+    width: 27px;
+    height: 2px;
+    background-color: #000;
+  }
+  .menu__line:nth-child(3) {
+    width: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 93%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 148px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

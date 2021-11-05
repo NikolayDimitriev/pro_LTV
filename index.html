@@ -17,45 +17,49 @@
     <body>
         <header class="header">
             <div class="header-wrapper">
-                <a href="./" class="logo">
-                    <img
-                        src="img/logo.svg"
-                        alt="Логотип "
-                        class="logo__image"
-                    />
-                </a>
-                <!-- /.logo -->
+                <div class="header-block">
 
-                <nav class="header-navbar">
-                    <ul class="header-menu">
-                        <li class="header-menu__item">
-                            <a href="#about" class="header-menu__link">О нас</a>
-                            <!-- /.header-menu__link -->
-                        </li>
-                        <!-- /.header-menu__item -->
-                        <li class="header-menu__item">
-                            <a href="#stage" class="header-menu__link"
-                                >Этапы работы</a
-                            >
-                            <!-- /.header-menu__link -->
-                        </li>
-                        <!-- /.header-menu__item -->
-                        <li class="header-menu__item">
-                            <a href="#team" class="header-menu__link"
-                                >Команда</a
-                            >
-                            <!-- /.header-menu__link -->
-                        </li>
-                        <!-- /.header-menu__item -->
-                        <li class="header-menu__item">
-                            <a href="#faq" class="header-menu__link">FAQ</a>
-                            <!-- /.header-menu__link -->
-                        </li>
-                        <!-- /.header-menu__item -->
-                    </ul>
-                    <!-- /.header-menu -->
-                </nav>
-                <!-- /.navbar -->
+                    <a href="./" class="logo">
+                        <img
+                            src="img/logo.svg"
+                            alt="Логотип "
+                            class="logo__image"
+                        />
+                    </a>
+                    <!-- /.logo -->
+    
+                    <nav class="header-navbar">
+                        <ul class="header-menu">
+                            <li class="header-menu__item">
+                                <a href="#about" class="header-menu__link">О нас</a>
+                                <!-- /.header-menu__link -->
+                            </li>
+                            <!-- /.header-menu__item -->
+                            <li class="header-menu__item">
+                                <a href="#stage" class="header-menu__link"
+                                    >Этапы работы</a
+                                >
+                                <!-- /.header-menu__link -->
+                            </li>
+                            <!-- /.header-menu__item -->
+                            <li class="header-menu__item">
+                                <a href="#team" class="header-menu__link"
+                                    >Команда</a
+                                >
+                                <!-- /.header-menu__link -->
+                            </li>
+                            <!-- /.header-menu__item -->
+                            <li class="header-menu__item">
+                                <a href="#faq" class="header-menu__link">FAQ</a>
+                                <!-- /.header-menu__link -->
+                            </li>
+                            <!-- /.header-menu__item -->
+                        </ul>
+                        <!-- /.header-menu -->
+                    </nav>
+                    <!-- /.navbar -->
+                </div>
+                <!-- /.header-block -->
 
                 <div class="social">
                     <a
@@ -81,11 +85,17 @@
                     <!-- /.social-block -->
                 </div>
                 <!-- /.social -->
+                <button class="menu">
+                    <span class="menu__line"></span>
+                    <span class="menu__line"></span>
+                    <span class="menu__line"></span>
+                </button>
+                <!-- /.menu-button navbar-top__manu-button -->
             </div>
             <!-- /.header-wrapper -->
         </header>
 
-        <section class="main">
+        <section class="main" style='display: none;'>
             <div class="main-wrapper">
                 <h2 class="main-title main__title">
                     Таргетированная реклама
@@ -123,7 +133,7 @@
             <!-- /.main-wrapper -->
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="about" style='display: none;'>
             <div class="about-wrapper">
                 <div class="about-info">
                     <h2 class="about-info__title">
@@ -186,7 +196,7 @@
             <!-- /.container -->
         </section>
 
-        <section class="trust">
+        <section class="trust" style='display: none;'>
             <div class="container">
                 <h2 class="trust__title">
                     Почему <br />
@@ -256,7 +266,7 @@
             <!-- /.container -->
         </section>
 
-        <section class="test">
+        <section class="test" style='display: none;'>
             <div class="test-container">
                 <!-- Slider main container -->
                 <div class="test-swiper swiper">
@@ -561,7 +571,7 @@
             <!-- /.container -->
         </section>
 
-        <section id="stage" class="stage">
+        <section id="stage" class="stage" style='display: none;'>
             <div class="container">
                 <h2 class="stage__title">Этапы работы</h2>
                 <!-- /.stage__title -->
@@ -615,7 +625,7 @@
             <!-- /.container -->
         </section>
 
-        <section id="team" class="team">
+        <section id="team" class="team" style='display: none;'>
             <div class="container">
                 <h2 class="team__title">Команда</h2>
                 <!-- /.team__title -->
@@ -668,7 +678,7 @@
             <!-- /.container -->
         </section>
 
-        <section id="faq" class="faq">
+        <section id="faq" class="faq" style='display: none;'>
             <div class="container">
                 <h2 class="faq__title">Faq</h2>
                 <!-- /.faq__title -->
@@ -833,7 +843,7 @@
             <!-- /.container -->
         </section>
 
-        <footer class="footer">
+        <footer class="footer" style='display: none;'>
             <div class="container">
                 <div class="footer-wrapper">
                     <div class="footer-block">
