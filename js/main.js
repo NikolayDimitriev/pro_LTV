@@ -1,15 +1,15 @@
-const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    loop: false,
+document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        loop: false,
 
-    // Navigation arrows
-    navigation: {
-        nextEl: ".swiper-button--next",
-        prevEl: ".swiper-button--prev",
-    },
-});
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button--next",
+            prevEl: ".swiper-button--prev",
+        },
+    });
 
-function createHoverImage() {
     document.querySelectorAll(".faq-wrapper__item").forEach((item) => {
         const img = item.querySelector(".faq-wrapper__img");
         const src = img.getAttribute("src");
@@ -50,6 +50,41 @@ function createHoverImage() {
             }
         });
     });
-}
 
-createHoverImage();
+    const formSlider = document.querySelector(".test-bottom__form");
+
+    formSlider.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        document.querySelectorAll(".test-slider__slide")[4].style.display =
+            "flex";
+
+        swiper.update();
+
+        swiper.slideNext(500, false);
+
+        swiper.disable();
+    });
+
+    document.querySelectorAll(".test-bottom__btn").forEach((item) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            item.style.backgroundColor = "#FFDE01";
+
+            swiper.slideNext(500, false);
+        });
+    });
+
+    document.querySelectorAll(".header-menu__link").forEach((item) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const blockId = item.getAttribute("href"); //получаем ссылку на какой блок ссылкает
+            document.querySelector("" + blockId).scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            }); //прокручиваем скрол к объекту
+        });
+    });
+});

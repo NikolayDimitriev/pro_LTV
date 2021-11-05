@@ -29,24 +29,26 @@
                 <nav class="header-navbar">
                     <ul class="header-menu">
                         <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">О нас</a>
+                            <a href="#about" class="header-menu__link">О нас</a>
                             <!-- /.header-menu__link -->
                         </li>
                         <!-- /.header-menu__item -->
                         <li class="header-menu__item">
-                            <a href="#" class="header-menu__link"
+                            <a href="#stage" class="header-menu__link"
                                 >Этапы работы</a
                             >
                             <!-- /.header-menu__link -->
                         </li>
                         <!-- /.header-menu__item -->
                         <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Команда</a>
+                            <a href="#team" class="header-menu__link"
+                                >Команда</a
+                            >
                             <!-- /.header-menu__link -->
                         </li>
                         <!-- /.header-menu__item -->
                         <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">FAQ</a>
+                            <a href="#faq" class="header-menu__link">FAQ</a>
                             <!-- /.header-menu__link -->
                         </li>
                         <!-- /.header-menu__item -->
@@ -121,7 +123,7 @@
             <!-- /.main-wrapper -->
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="about-wrapper">
                 <div class="about-info">
                     <h2 class="about-info__title">
@@ -465,6 +467,7 @@
                                                 test-bottom__submit
                                                 subscribe__button
                                             "
+                                            type="submit"
                                         >
                                             Отправить
                                         </button>
@@ -480,7 +483,10 @@
                             <!-- /.test-bottom -->
                         </div>
                         <!-- /.test-slider__slide -->
-                        <div class="swiper-slide test-slider__slide">
+                        <div
+                            class="swiper-slide test-slider__slide"
+                            style="display: none"
+                        >
                             <div class="test-top">
                                 <img
                                     src="img/present.svg"
@@ -555,7 +561,7 @@
             <!-- /.container -->
         </section>
 
-        <section class="stage">
+        <section id="stage" class="stage">
             <div class="container">
                 <h2 class="stage__title">Этапы работы</h2>
                 <!-- /.stage__title -->
@@ -609,7 +615,7 @@
             <!-- /.container -->
         </section>
 
-        <section class="team">
+        <section id="team" class="team">
             <div class="container">
                 <h2 class="team__title">Команда</h2>
                 <!-- /.team__title -->
@@ -662,7 +668,7 @@
             <!-- /.container -->
         </section>
 
-        <section class="faq">
+        <section id="faq" class="faq">
             <div class="container">
                 <h2 class="faq__title">Faq</h2>
                 <!-- /.faq__title -->

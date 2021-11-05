@@ -588,11 +588,8 @@ a:hover, button:hover {
 
 .about {
   padding: 5px 0;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
   padding-left: 300px;
-  background-image: url(../img/about-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .about-wrapper {
@@ -778,9 +775,30 @@ a:hover, button:hover {
 .trust {
   padding-bottom: 90px;
   position: relative;
-  background-image: url(../img/trust-bg.png);
+}
+
+.trust::before {
+  content: '';
+  position: absolute;
+  top: -400px;
+  right: 37px;
+  width: 24%;
+  height: 120%;
+  background-image: url(../img/trust-bg1.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  z-index: 0;
+}
+
+.trust::after {
+  content: '';
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/trust-bg-2.svg);
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .trust__title {
