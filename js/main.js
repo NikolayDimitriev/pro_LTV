@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
+    const header = document.querySelector('.header');
+
     document.querySelectorAll(".faq-wrapper__item").forEach((item) => {
         const img = item.querySelector(".faq-wrapper__img");
         const src = img.getAttribute("src");
@@ -76,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    document.querySelectorAll(".header-menu__link").forEach((item) => {
+    header.querySelectorAll(".header-menu__link").forEach((item) => {
         item.addEventListener("click", (e) => {
             e.preventDefault();
 
@@ -86,5 +88,42 @@ document.addEventListener("DOMContentLoaded", () => {
                 block: "start",
             }); //прокручиваем скрол к объекту
         });
+    });
+
+    const menu = header.querySelector('.menu');
+
+    menu.addEventListener('click', ()=>{
+        const menuMobile = header.querySelector('.header-bottom');
+        const logo = header.querySelector('.logo__image');
+        const src = logo.getAttribute("data-mobile-src");
+        const srcH = logo.getAttribute("data-close-src");
+        const menuImage = menu.querySelector('img');
+
+        if(menuMobile.style.display == 'none')
+        {
+            menuMobile.style.display = 'flex';
+            header.style.cssText = `
+                background: linear-gradient(233.54deg, rgba(95, 76, 142, 0.2) 28.75%, rgba(228, 42, 42, 0.2) 52.12%, rgba(26, 8, 51, 0.2) 88.11%), radial-gradient(25% 30.33% at 25% 30.33%, rgba(160, 32, 103, 0.3) 0%, rgba(26, 9, 51, 0.3) 100%), linear-gradient(0deg, #1A0933, #1A0933), radial-gradient(25.1% 194.59% at 71.88% 49.19%, rgba(182, 229, 243, 0.9) 0%, rgba(182, 229, 243, 0) 100%), #2D69A5;
+                color: #fff;
+            `;
+            logo.src = srcH;
+            menu.style.cssText = 'background-color: transparent;'
+            menu.querySelectorAll('.menu__line').forEach(item => {
+                item.style.display = 'none';
+            });
+            menuImage.style.display = 'block';
+        }
+        else {
+            logo.src = src;
+            menuMobile.style.display = 'none';
+            header.style.cssText = `
+                background: #fff;
+                color: #000;
+            `;
+            menuImage.style.display = 'none';
+            menu.querySelectorAll('.menu__line').forEach(item => {
+                item.style.display = 'inline';
+            });
+        }
     });
 });

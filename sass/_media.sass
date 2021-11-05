@@ -1,3 +1,28 @@
+@media (min-width: 1200px)
+    a,  button 
+        &:hover
+            cursor: pointer
+    .header
+        &-menu
+            &__link
+                &:hover 
+                    background-color: #DD3934
+                    color: #fff
+    .faq
+        &-wrapper
+            &__preview
+                &:hover
+                    color: #fff 
+                    padding: 35px 40px
+                    background: linear-gradient(233.54deg, rgba(95, 76, 142, 0.2) 28.75%, rgba(228, 42, 42, 0.2) 52.12%, rgba(26, 8, 51, 0.2) 88.11%), radial-gradient(25% 30.33% at 25% 30.33%, rgba(160, 32, 103, 0.3) 0%, rgba(26, 9, 51, 0.3) 100%), #1A0933
+    .team
+        &-bottom
+            &__btn
+                &:hover
+                    background-color: #FFDE01 
+        &-button
+            &:hover
+                opacity: 0.7  
 @media (max-width: 1350px)
     .social
         justify-content: flex-end
@@ -16,8 +41,15 @@
                 font-size: 16px
                 line-height: 20px
                 padding: 15px
+                &:hover
+                    background-color: inherit
+                    color: #000
     .social
         &-block
+            cursor: default
+            &__text
+                font-size: 14px
+                line-height: 17px
             &__image
                 width: 45px
                 height: 45px
@@ -32,6 +64,10 @@
     .header
         &-navbar
             display: none
+        &-bottom
+            &__social
+                display: flex
+                justify-content: flex-start
     .menu
         display: flex
         flex-direction: column
@@ -44,8 +80,16 @@
             width: 27px
             height: 2px
             background-color: #000   
-            &:nth-child(3)
+            &:nth-child(4)
                 width: 13px
+    .social
+        &-block
+            margin-right: 45px
+            &__image
+                width: 36px
+                height: 36px
+            &__text
+                display: inline-block
 @media (max-width: 768px)
     .container
         max-width: 576px

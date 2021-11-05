@@ -22,6 +22,8 @@
                     <a href="./" class="logo">
                         <img
                             src="img/logo.svg"
+                            data-close-src="img/logo-mobile.svg"
+                            data-mobile-src="img/logo.svg"
                             alt="Логотип "
                             class="logo__image"
                         />
@@ -86,6 +88,7 @@
                 </div>
                 <!-- /.social -->
                 <button class="menu">
+                    <img src="img/close-mobile-menu.svg" alt="Крест" class="menu__close" style="display: none;">
                     <span class="menu__line"></span>
                     <span class="menu__line"></span>
                     <span class="menu__line"></span>
@@ -93,6 +96,78 @@
                 <!-- /.menu-button navbar-top__manu-button -->
             </div>
             <!-- /.header-wrapper -->
+            <div class="header-bottom" style="display: none;">
+                
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li class="header-list__item">
+                            <a href="#about" class="header-list__link">О нас</a>
+
+                        </li>
+
+                        <li class="header-list__item">
+                            <a href="#stage" class="header-list__link"
+                                >Этапы работы</a
+                            >
+
+                        </li>
+                        <!-- /.header-menu__item -->
+                        <li class="header-list__item">
+                            <a href="#team" class="header-list__link"
+                                >Команда</a
+                            >
+   
+                        </li>
+      
+                        <li class="header-list__item">
+                            <a href="#faq" class="header-list__link">FAQ</a>
+ 
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <div class="header-bottom__info">
+                    <div class="header-bottom__elem">
+                        ИП Кабанец А.А.
+                    </div>
+
+                    <div class="header-bottom__elem">
+                        ИНН: 552003648247
+                    </div>
+                    <div class="header-bottom__elem">
+                        ОГРНИП: 321508100478641
+                    </div>
+                </div>
+
+                <div class="header-bottom__social social">
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=79150774733"
+                        class="social-block"
+                    >
+                        <span class="social-block__text">WhatsApp</span>
+                        <img
+                            src="img/whatsApp.svg"
+                            alt="WhatsApp"
+                            class="social-block__image"
+                        />
+                    </a>
+                    <!-- /.social-block -->
+                    <a href="https://t.me/Pro_LTV" class="social-block">
+                        <span class="social-block__text">Telegram</span>
+                        <img
+                            src="img/telegram.svg"
+                            alt="Telegram"
+                            class="social-block__image"
+                        />
+                    </a>
+                    <!-- /.social-block -->
+                </div>
+                <!-- /.social --> 
+            </div>
+            <!-- /.header-bottom -->
         </header>
 
         <section class="main" style='display: none;'>

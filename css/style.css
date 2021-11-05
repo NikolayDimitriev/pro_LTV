@@ -364,10 +364,6 @@ input, button {
   outline: none;
 }
 
-a:hover, button:hover {
-  cursor: pointer;
-}
-
 img {
   max-width: 100%;
 }
@@ -389,6 +385,75 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-bottom {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 15px;
+}
+
+.header-bottom__info {
+  font-size: 16px;
+  line-height: 170%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-bottom__elem {
+  margin-bottom: 10px;
+}
+
+.header-bottom__social {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav {
+  margin-bottom: 20px;
+}
+
+.header-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-list__item {
+  margin-bottom: 20px;
+}
+
+.header-list__link {
+  cursor: default;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
 }
 
 .header-block {
@@ -431,11 +496,6 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-}
-
-.header-menu__link:hover {
-  background-color: #DD3934;
-  color: #fff;
 }
 
 .logo {
@@ -1054,10 +1114,6 @@ img {
   margin-bottom: 20px;
 }
 
-.test-bottom__btn:hover {
-  background-color: #FFDE01;
-}
-
 .test-bottom__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1123,10 +1179,6 @@ img {
   letter-spacing: 0.1em;
   color: #000000;
   opacity: 0.3;
-}
-
-.test-button:hover {
-  opacity: 0.7;
 }
 
 .test-button__left {
@@ -1422,13 +1474,6 @@ img {
   padding: 35px 0;
 }
 
-.faq-wrapper__preview:hover {
-  cursor: pointer;
-  color: #fff;
-  padding: 35px 40px;
-  background: linear-gradient(233.54deg, rgba(95, 76, 142, 0.2) 28.75%, rgba(228, 42, 42, 0.2) 52.12%, rgba(26, 8, 51, 0.2) 88.11%), radial-gradient(25% 30.33% at 25% 30.33%, rgba(160, 32, 103, 0.3) 0%, rgba(26, 9, 51, 0.3) 100%), #1A0933;
-}
-
 .faq-wrapper__question {
   display: inline-block;
   font-weight: 500;
@@ -1567,6 +1612,27 @@ img {
   height: 36px;
 }
 
+@media (min-width: 1200px) {
+  a:hover, button:hover {
+    cursor: pointer;
+  }
+  .header-menu__link:hover {
+    background-color: #DD3934;
+    color: #fff;
+  }
+  .faq-wrapper__preview:hover {
+    color: #fff;
+    padding: 35px 40px;
+    background: linear-gradient(233.54deg, rgba(95, 76, 142, 0.2) 28.75%, rgba(228, 42, 42, 0.2) 52.12%, rgba(26, 8, 51, 0.2) 88.11%), radial-gradient(25% 30.33% at 25% 30.33%, rgba(160, 32, 103, 0.3) 0%, rgba(26, 9, 51, 0.3) 100%), #1A0933;
+  }
+  .team-bottom__btn:hover {
+    background-color: #FFDE01;
+  }
+  .team-button:hover {
+    opacity: 0.7;
+  }
+}
+
 @media (max-width: 1350px) {
   .social {
     -webkit-box-pack: end;
@@ -1591,6 +1657,17 @@ img {
     line-height: 20px;
     padding: 15px;
   }
+  .header-menu__link:hover {
+    background-color: inherit;
+    color: #000;
+  }
+  .social-block {
+    cursor: default;
+  }
+  .social-block__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
   .social-block__image {
     width: 45px;
     height: 45px;
@@ -1613,6 +1690,14 @@ img {
   .header-navbar {
     display: none;
   }
+  .header-bottom__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1634,8 +1719,18 @@ img {
     height: 2px;
     background-color: #000;
   }
-  .menu__line:nth-child(3) {
+  .menu__line:nth-child(4) {
     width: 13px;
+  }
+  .social-block {
+    margin-right: 45px;
+  }
+  .social-block__image {
+    width: 36px;
+    height: 36px;
+  }
+  .social-block__text {
+    display: inline-block;
   }
 }
 
