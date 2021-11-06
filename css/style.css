@@ -563,6 +563,7 @@ img {
 .main-wrapper {
   padding: 60px 0;
   max-width: 1720px;
+  width: 95%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,6 +586,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
+  z-index: 100;
 }
 
 .main-title__strong {
@@ -1630,7 +1632,21 @@ img {
   }
 }
 
+@media (max-width: 1500px) {
+  .main::before {
+    height: 672px;
+    top: -38px;
+  }
+  .main__title {
+    font-size: 50px;
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 1350px) {
+  .main-form {
+    padding: 40px;
+  }
   .social {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1679,6 +1695,51 @@ img {
 @media (max-width: 1200px) {
   .container {
     max-width: 760px;
+  }
+  .main {
+    height: 825px;
+  }
+  .main-wrapper {
+    max-width: 760px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-title {
+    margin-bottom: 60px;
+    font-size: 50px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+  }
+  .main:before {
+    background-image: url(../img/girl-1.png);
+    width: 374px;
+    top: 260px;
+    left: auto;
+    right: 0;
+  }
+  .main-form {
+    padding: 40px;
+    max-width: 354px;
+  }
+  .main-form__title {
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 25px;
+  }
+  .subscribe__input {
+    margin-bottom: 25px;
+    padding: 15px 0;
+  }
+  .subscribe__button {
+    margin-top: 5px;
   }
   .test-container {
     max-width: 960px;
@@ -1860,6 +1921,9 @@ img {
   .container {
     max-width: 760px;
   }
+  .main-wrapper {
+    max-width: 730px;
+  }
   .about {
     padding-left: 0;
   }
@@ -2006,6 +2070,36 @@ img {
   .container {
     max-width: 576px;
     width: 93%;
+  }
+  .main {
+    height: 841px;
+    padding: 30px 0;
+  }
+  .main-wrapper {
+    padding: 0;
+    max-width: 576px;
+    width: 93%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__title {
+    font-size: 25px;
+    line-height: 140%;
+    text-align: center;
+  }
+  .main-title {
+    margin-bottom: 280px;
+  }
+  .main:before {
+    background-image: url(../img/girl-2.png);
+    width: 239px;
+    top: 76px;
+    left: auto;
+    right: 27%;
   }
   .trust__title {
     font-size: 35px;
@@ -2310,6 +2404,24 @@ img {
 }
 
 @media (max-width: 480px) {
+  .main__title {
+    text-align: left;
+  }
+  .main-title {
+    max-width: 290px;
+    margin-bottom: 248px;
+  }
+  .main-form {
+    max-width: 290px;
+    padding: 30px 20px;
+  }
+  .main::before {
+    top: 112px;
+    right: 20%;
+  }
+  .subscribe__button {
+    height: 54px;
+  }
   .stage-grid__item {
     width: 100%;
   }
