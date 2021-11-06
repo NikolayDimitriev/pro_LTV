@@ -514,6 +514,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   min-width: 400px;
+  z-index: 100;
 }
 
 .social-block {
