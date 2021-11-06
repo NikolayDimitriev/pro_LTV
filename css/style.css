@@ -1643,11 +1643,53 @@ img {
   .social-block__text {
     display: none;
   }
+  .test-top {
+    border-radius: 0 30px 0 0;
+  }
+  .test-top::before {
+    display: none;
+  }
+  .test-bottom {
+    width: 95%;
+  }
 }
 
 @media (max-width: 1200px) {
   .container {
+    max-width: 760px;
+  }
+  .test-container {
     max-width: 960px;
+    margin: auto;
+  }
+  .test-top {
+    width: 75%;
+  }
+  .test-bottom {
+    width: 75%;
+    padding-right: 60px;
+  }
+  .test-bottom__title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .test-bottom__step {
+    display: none;
+  }
+  .test-bottom__quiz {
+    margin-right: 0;
+  }
+  .test-slider__slide {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .test-swiper {
+    height: 540px;
+  }
+  .test-buttons {
+    bottom: 8%;
+    left: 17%;
   }
   .logo {
     width: 188px;
@@ -1728,6 +1770,15 @@ img {
 @media (max-width: 992px) {
   .container {
     max-width: 760px;
+  }
+  .test-container {
+    max-width: 728px;
+  }
+  .test-top {
+    width: 95%;
+  }
+  .test-bottom {
+    width: 95%;
   }
   .logo {
     margin-right: 20px;
@@ -1825,8 +1876,12 @@ img {
   .social-block__text {
     display: inline-block;
   }
-  .team-wrapper {
-    width: 100%;
+  .test-top {
+    width: 90%;
+  }
+  .test-bottom {
+    width: 90%;
+    padding-right: 10px;
   }
   .faq-wrapper {
     width: 95%;
@@ -1844,6 +1899,46 @@ img {
   .container {
     max-width: 576px;
     width: 93%;
+  }
+  .test-container {
+    max-width: 576px;
+    width: 93%;
+  }
+  .test-top__img {
+    display: none;
+  }
+  .test-top__title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .test-top__subtitle {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .test-bottom__title {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .test-bottom__btn {
+    width: 290px;
+    height: 78px;
+  }
+  .test-bottom__form {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  .test-bottom__input {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .test-bottom__submit {
+    width: 90%;
+  }
+  .team-wrapper {
+    width: 100%;
+  }
+  .swiper {
+    height: 650px;
   }
   .stage__title {
     font-size: 35px;
@@ -2017,6 +2112,35 @@ img {
   .team-wrapper__item {
     margin: 0;
     margin-bottom: 20px;
+  }
+  .test-container {
+    width: 100%;
+    margin: 0;
+  }
+  .test-top {
+    padding: 20px 15px;
+    width: 98%;
+  }
+  .test-bottom {
+    padding: 25px 15px;
+    width: 98%;
+  }
+  .test-bottom__btn:last-child {
+    margin-bottom: 0;
+  }
+  .test-bottom__subtitle {
+    max-width: 290px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .test-buttons {
+    display: none;
+  }
+  .test-slider__slide {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 

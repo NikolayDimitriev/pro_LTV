@@ -30,9 +30,40 @@
         &-block
             &__text
                 display: none
+    .test
+        &-top
+            border-radius: 0 30px 0 0
+            &::before
+                display: none
+        &-bottom
+            width: 95%
 @media (max-width: 1200px)
     .container
-        max-width: 960px
+        max-width: 760px
+    .test
+        &-container
+            max-width: 960px
+            margin: auto
+        &-top
+            width: 75%
+        &-bottom
+            width: 75%
+            padding-right: 60px
+            &__title
+                font-size: 28px
+                line-height: 120%
+            &__step
+                display: none
+            &__quiz
+                margin-right: 0
+        &-slider
+            &__slide
+                align-items: center
+        &-swiper
+            height: 540px
+        &-buttons
+            bottom: 8%
+            left: 17%
     .logo
         width: 188px
     .header
@@ -91,6 +122,13 @@
 @media (max-width: 992px)
     .container
         max-width: 760px
+    .test
+        &-container
+            max-width: 728px
+        &-top
+            width: 95%
+        &-bottom
+            width: 95%
     .logo
         margin-right: 20px
     .stage
@@ -159,9 +197,12 @@
                 height: 36px
             &__text
                 display: inline-block
-    .team
-        &-wrapper
-            width: 100%
+    .test
+        &-top
+            width: 90%
+        &-bottom
+            width: 90%
+            padding-right: 10px
     .faq
         &-wrapper
             width: 95%
@@ -176,6 +217,39 @@
     .container
         max-width: 576px
         width: 93%
+    .test
+        &-container
+            max-width: 576px
+            width: 93%
+        &-top
+            &__img
+                display: none
+            &__title
+                font-size: 24px
+                line-height: 120%
+            &__subtitle
+                font-size: 16px
+                line-height: 140%
+        &-bottom
+            &__title
+                font-size: 20px
+                line-height: 120%
+            &__btn
+                width: 290px
+                height: 78px
+            &__form
+                padding-top: 40px
+                padding-bottom: 90px
+            &__input
+                width: 90%
+                margin-bottom: 50px
+            &__submit
+                width: 90%
+    .team
+        &-wrapper
+            width: 100%
+    .swiper
+        height: 650px
     .stage
         &__title
             font-size: 35px
@@ -280,6 +354,29 @@
             &__item
                 margin: 0
                 margin-bottom: 20px
+    .test
+        &-container
+            width: 100%
+            margin: 0
+        &-top
+            padding: 20px 15px
+            width: 98%
+        &-bottom
+            padding: 25px 15px
+            width: 98%
+            &__btn
+                &:last-child
+                    margin-bottom: 0
+            &__subtitle
+                max-width: 290px
+                font-size: 14px
+                line-height: 150%
+        &-buttons
+            display: none
+        &-slider
+            &__slide
+                width: 100%
+                align-items: start
 @media (max-width: 480px)
     .stage
         &-grid
