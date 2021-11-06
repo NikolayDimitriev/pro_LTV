@@ -1148,7 +1148,7 @@ img {
 
 .test-swiper {
   position: relative;
-  width: 105% !important;
+  width: 100%;
 }
 
 .test-buttons {
@@ -1197,7 +1197,7 @@ img {
 }
 
 .swiper {
-  width: 99%;
+  width: 100%;
   height: 540px;
 }
 
@@ -1645,12 +1645,13 @@ img {
   }
   .test-top {
     border-radius: 0 30px 0 0;
+    width: 99%;
   }
   .test-top::before {
     display: none;
   }
   .test-bottom {
-    width: 95%;
+    width: 99%;
   }
 }
 
@@ -1876,12 +1877,15 @@ img {
   .social-block__text {
     display: inline-block;
   }
-  .test-top {
-    width: 90%;
-  }
   .test-bottom {
-    width: 90%;
     padding-right: 10px;
+  }
+  .test-bottom__input {
+    width: 90%;
+    margin-bottom: 35px;
+  }
+  .test-bottom__submit {
+    width: 90%;
   }
   .faq-wrapper {
     width: 95%;
@@ -1928,11 +1932,7 @@ img {
     padding-bottom: 90px;
   }
   .test-bottom__input {
-    width: 90%;
     margin-bottom: 50px;
-  }
-  .test-bottom__submit {
-    width: 90%;
   }
   .team-wrapper {
     width: 100%;
@@ -2119,11 +2119,11 @@ img {
   }
   .test-top {
     padding: 20px 15px;
-    width: 98%;
+    width: 100%;
   }
   .test-bottom {
-    padding: 25px 15px;
-    width: 98%;
+    padding: 18px 15px;
+    width: 100%;
   }
   .test-bottom__btn:last-child {
     margin-bottom: 0;
