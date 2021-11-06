@@ -67,6 +67,45 @@
             left: 17%
     .logo
         width: 188px
+    .trust
+        &::before
+            display: none
+        &::after
+            display: none
+        &__title
+            font-size: 60px
+            line-height: 120%
+        &-block
+            &__item
+                width: 229px
+                height: 483px
+                margin-right: 0
+                padding: 30px 10px
+                &--sb
+                    justify-content: space-between
+            &__image
+                width: 209px
+                height: 221px
+            &__title
+                margin: 0
+                font-size: 25px
+                line-height: 120%
+                margin-top: 30px
+                margin-bottom: 20px
+                &--two
+                    font-size: 18px
+                    line-height: 120%
+                    margin-top: 15px
+            &__subtitle
+                font-size: 14px
+                line-height: 150%
+                max-width: 209px
+                &--one
+                    margin: 0
+                &--three
+                    margin: 0
+                &--two
+                    margin-bottom: 20px
     .header
         &-menu
             &__link
@@ -220,6 +259,16 @@
     .container
         max-width: 576px
         width: 93%
+    .trust
+        &__title
+            font-size: 35px
+            line-height: 120%
+        &-block
+            flex-direction: column
+            &__item
+                margin-bottom: 30px
+                &:last-child
+                    margin-bottom: 0
     .test
         &-container
             max-width: 576px

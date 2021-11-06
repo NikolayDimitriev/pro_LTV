@@ -923,14 +923,6 @@ img {
   text-align: center;
 }
 
-.trust-block__item:nth-child(1) {
-  margin-right: 30px;
-}
-
-.trust-block__item:nth-child(2) {
-  margin-right: 30px;
-}
-
 .trust-block__img {
   position: absolute;
   top: 40px;
@@ -948,7 +940,7 @@ img {
 }
 
 .trust-block__title--two {
-  margin-bottom: 360px;
+  margin-bottom: 380px;
   margin-top: 0;
   z-index: 10;
   font-size: 25px;
@@ -964,11 +956,15 @@ img {
   color: #000000;
 }
 
-.trust-block__subtitle:nth-child(1) {
+.trust-block__subtitle--one {
   margin-top: 25px;
 }
 
-.trust-block__subtitle:nth-child(3) {
+.trust-block__subtitle--two {
+  margin-top: 10px;
+}
+
+.trust-block__subtitle--three {
   margin-top: 40px;
 }
 
@@ -1695,6 +1691,57 @@ img {
   .logo {
     width: 188px;
   }
+  .trust::before {
+    display: none;
+  }
+  .trust::after {
+    display: none;
+  }
+  .trust__title {
+    font-size: 60px;
+    line-height: 120%;
+  }
+  .trust-block__item {
+    width: 229px;
+    height: 483px;
+    margin-right: 0;
+    padding: 30px 10px;
+  }
+  .trust-block__item--sb {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .trust-block__image {
+    width: 209px;
+    height: 221px;
+  }
+  .trust-block__title {
+    margin: 0;
+    font-size: 25px;
+    line-height: 120%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .trust-block__title--two {
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 15px;
+  }
+  .trust-block__subtitle {
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 209px;
+  }
+  .trust-block__subtitle--one {
+    margin: 0;
+  }
+  .trust-block__subtitle--three {
+    margin: 0;
+  }
+  .trust-block__subtitle--two {
+    margin-bottom: 20px;
+  }
   .header-menu__link {
     font-size: 16px;
     line-height: 20px;
@@ -1903,6 +1950,22 @@ img {
   .container {
     max-width: 576px;
     width: 93%;
+  }
+  .trust__title {
+    font-size: 35px;
+    line-height: 120%;
+  }
+  .trust-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trust-block__item {
+    margin-bottom: 30px;
+  }
+  .trust-block__item:last-child {
+    margin-bottom: 0;
   }
   .test-container {
     max-width: 576px;
