@@ -53,6 +53,28 @@
             &__image
                 width: 45px
                 height: 45px
+    .stage
+        &__title
+            font-size: 50px
+            line-height: 120%
+        &-grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(3, min-content)
+            &__item
+                width: 364px
+                height: 261px
+                padding-bottom: 20px
+                &--one
+                    grid-row: 1
+                    grid-column: 1
+                &--four
+                    display: none
+                &--five
+                    grid-row: 3px
+                    grid-column: 1
+            &__text
+                font-size: 18px
+                line-height: 150%
     .team
         &__title
             font-size: 50px
@@ -66,7 +88,10 @@
         max-width: 760px
     .logo
         margin-right: 20px
+    .stage
+        padding: 60px 0
     .team
+        padding: 60px 0
         &-wrapper
             width: 80%
             &__item
@@ -107,12 +132,52 @@
     .team
         &-wrapper
             width: 100%
-@media (max-width: 768px)
+@media (max-width: 767px)
     .container
         max-width: 576px
         width: 93%
+    .stage
+        &__title
+            font-size: 35px
+        &-grid
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            &__item
+                &--one
+                    height: 190px
+                    order: 1
+                    background-size: 30%
+                &--two
+                    height: 144px
+                    order: 2
+                &--three
+                    height: 170px
+                    order: 3
+                    background-size: 50%
+                &--five
+                    order: 5
+                    height: 144px
+                &--six
+                    order: 4
+                    height: 170px
+                    background-size: 25%
+                &--seven
+                    height: 170px
+                    order: 6
+                    background-size: 25%
+            &__text
+                font-size: 16px
+                line-height: 150% 
+            &__num
+                font-size: 20px
+                line-height: 120%
 @media (max-width: 605px)
+    .stage
+        padding: 40px 0
     .team
+        padding: 40px 0
         &-wrapper
             width: 95%
             display: flex
@@ -122,6 +187,10 @@
                 margin: 0
                 margin-bottom: 20px
 @media (max-width: 480px)
+    .stage
+        &-grid
+            &__item
+                width: 100%
     .team
         &__title
             font-size: 35px
