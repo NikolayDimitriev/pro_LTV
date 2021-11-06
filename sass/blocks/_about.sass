@@ -29,11 +29,22 @@
       flex-direction: column
       justify-content: space-between
       align-items: center
-      background-image: url(../img/about-bg-image.png)
-      background-repeat: no-repeat
-      background-size: contain
       z-index: 100
       padding: 40px 30px 10px 10px
+      &--large
+         background-image: url(../img/about-bg-image.png)
+         background-repeat: no-repeat
+         background-size: contain
+      &--small
+         display: none
+         background-image: url(../img/about-bg-image--small.png)
+         background-repeat: no-repeat
+         background-size: contain
+      &--middle
+         display: none
+         background-image: url(../img/about-bg-image--middle.png)
+         background-repeat: no-repeat
+         background-size: contain
       &__block
          display: flex
          justify-content: space-between

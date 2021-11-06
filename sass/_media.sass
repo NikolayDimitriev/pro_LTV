@@ -34,15 +34,12 @@
         &-wrapper
             display: flex
             flex-direction: column
-            align-items: flex-start
+            align-items: center
             max-width: 1140px
             margin: auto
         &-info
             margin-right: 0
             margin-bottom: 20px
-        &-image
-            &__block
-            &__item
     .trust
         &::before
             display: none
@@ -86,15 +83,20 @@
     .logo
         width: 188px
     .about
-        padding-left: 160px
+        &-wrapper
+            max-width: 760px
+        &-info
+            margin-bottom: 40px
         &-image
-            width: 80%
-            padding-top: 100px
-            &__block
-                padding: 0
-                padding-right: 25%
-            &__item
-                margin-left: 15%
+            width: 728px
+            height: 535px
+            padding-left: 0
+            &__wrap
+                width: 100%
+            &--large
+                display: none
+            &--middle
+                display: flex
     .trust
         &__title
             font-size: 60px
@@ -189,8 +191,15 @@
     .about
         padding-left: 0
         &-wrapper
-            max-width: 760px
-            margin: auto  
+            max-width: 730px
+            margin: auto
+        &-info
+            &__title
+                font-size: 50px
+                line-height: 120%
+            &__text
+                font-size: 16px
+                line-height: 170%
     .test
         &-container
             max-width: 728px
@@ -422,6 +431,37 @@
 @media (max-width: 605px)
     .stage
         padding: 40px 0
+    .about
+        &-wrapper
+            max-width: 576px
+            width: 93%
+            align-items: center
+        &-image
+            width: 290px
+            height: 644px
+            padding: 20px 0 30px 0
+            &--middle
+                display: none
+            &--small
+                display: flex
+            &__title
+                font-size: 45px
+                line-height: 130%
+            &__wrap
+                flex-direction: column
+            &__num
+                font-size: 40px
+                line-height: 130%
+            &__text
+                font-size: 16px
+                line-height: 170%
+        &-info
+            &__title
+                font-size: 35px
+                line-height: 120%
+            &__text
+                font-size: 14px
+                line-height: 160%
     .team
         padding: 40px 0
         &-wrapper
