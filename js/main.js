@@ -53,6 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    document.querySelector('.swiper-button--next').addEventListener('click', () => {
+        document.querySelector('.swiper-button--prev').style.visibility = 'visible';
+    });
+
     const formSlider = document.querySelector(".test-bottom__form");
 
     formSlider.addEventListener("submit", (e) => {

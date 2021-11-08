@@ -1200,6 +1200,10 @@ img {
   height: 540px;
 }
 
+.swiper-button--prev {
+  visibility: hidden;
+}
+
 .stage {
   background-image: url(../img/stage-bg.png);
   background-repeat: no-repeat;
@@ -2025,6 +2029,7 @@ img {
     height: 30px;
     border: none;
     background-color: #fff;
+    margin-right: 10px;
   }
   .menu__line {
     width: 27px;
@@ -2100,6 +2105,52 @@ img {
     top: 76px;
     left: auto;
     right: 27%;
+  }
+  .about-wrapper {
+    max-width: 576px;
+    width: 93%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-image {
+    width: 290px;
+    height: 644px;
+    padding: 20px 0 30px 0;
+  }
+  .about-image__title {
+    font-size: 45px;
+    line-height: 130%;
+  }
+  .about-image--middle {
+    display: none;
+  }
+  .about-image--small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about-image__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-image__num {
+    font-size: 40px;
+    line-height: 130%;
+  }
+  .about-image__text {
+    font-size: 16px;
+    line-height: 170%;
+  }
+  .about-info__title {
+    font-size: 35px;
+    line-height: 120%;
+  }
+  .about-info__text {
+    font-size: 14px;
+    line-height: 160%;
   }
   .trust__title {
     font-size: 35px;
@@ -2305,52 +2356,6 @@ img {
 @media (max-width: 605px) {
   .stage {
     padding: 40px 0;
-  }
-  .about-wrapper {
-    max-width: 576px;
-    width: 93%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about-image {
-    width: 290px;
-    height: 644px;
-    padding: 20px 0 30px 0;
-  }
-  .about-image--middle {
-    display: none;
-  }
-  .about-image--small {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .about-image__title {
-    font-size: 45px;
-    line-height: 130%;
-  }
-  .about-image__wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about-image__num {
-    font-size: 40px;
-    line-height: 130%;
-  }
-  .about-image__text {
-    font-size: 16px;
-    line-height: 170%;
-  }
-  .about-info__title {
-    font-size: 35px;
-    line-height: 120%;
-  }
-  .about-info__text {
-    font-size: 14px;
-    line-height: 160%;
   }
   .team {
     padding: 40px 0;

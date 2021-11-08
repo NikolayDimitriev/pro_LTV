@@ -306,6 +306,7 @@
         height: 30px
         border: none
         background-color: #fff
+        margin-right: 10px
         &__line
             width: 27px
             height: 2px
@@ -363,6 +364,37 @@
             top: 76px
             left: auto
             right: 27%
+    .about
+        &-wrapper
+            max-width: 576px
+            width: 93%
+            align-items: center
+        &-image
+            width: 290px
+            height: 644px
+            padding: 20px 0 30px 0
+            &__title
+                font-size: 45px
+                line-height: 130%
+            &--middle
+                display: none
+            &--small
+                display: flex
+            &__wrap
+                flex-direction: column
+            &__num
+                font-size: 40px
+                line-height: 130%
+            &__text
+                font-size: 16px
+                line-height: 170%
+        &-info
+            &__title
+                font-size: 35px
+                line-height: 120%
+            &__text
+                font-size: 14px
+                line-height: 160%
     .trust
         &__title
             font-size: 35px
@@ -497,37 +529,6 @@
 @media (max-width: 605px)
     .stage
         padding: 40px 0
-    .about
-        &-wrapper
-            max-width: 576px
-            width: 93%
-            align-items: center
-        &-image
-            width: 290px
-            height: 644px
-            padding: 20px 0 30px 0
-            &--middle
-                display: none
-            &--small
-                display: flex
-            &__title
-                font-size: 45px
-                line-height: 130%
-            &__wrap
-                flex-direction: column
-            &__num
-                font-size: 40px
-                line-height: 130%
-            &__text
-                font-size: 16px
-                line-height: 170%
-        &-info
-            &__title
-                font-size: 35px
-                line-height: 120%
-            &__text
-                font-size: 14px
-                line-height: 160%
     .team
         padding: 40px 0
         &-wrapper
