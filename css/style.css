@@ -514,6 +514,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   min-width: 400px;
+  z-index: 100;
 }
 
 .social-block {
@@ -1075,7 +1076,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 70px;
+  margin-right: 50px;
 }
 
 .test-bottom__title {
@@ -1766,6 +1767,13 @@ img {
   .test-bottom__quiz {
     margin-right: 0;
   }
+  .test-bottom__input {
+    width: 90%;
+    margin-bottom: 35px;
+  }
+  .test-bottom__submit {
+    width: 90%;
+  }
   .test-slider__slide {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2052,13 +2060,6 @@ img {
   .test-bottom {
     padding-right: 10px;
   }
-  .test-bottom__input {
-    width: 90%;
-    margin-bottom: 35px;
-  }
-  .test-bottom__submit {
-    width: 90%;
-  }
   .faq-wrapper {
     width: 95%;
     margin: auto;
@@ -2227,7 +2228,7 @@ img {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    background-size: 30%;
+    background-size: 28%;
   }
   .stage-grid__item--two {
     height: 144px;
@@ -2240,7 +2241,7 @@ img {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    background-size: 50%;
+    background-size: 55%;
   }
   .stage-grid__item--five {
     -webkit-box-ordinal-group: 6;
